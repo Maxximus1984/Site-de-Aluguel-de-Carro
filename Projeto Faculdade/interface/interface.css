@@ -1,0 +1,226 @@
+/* ELEMENTOS DA PAGINA (BOTOES, CLASSES, FONTE ETC) (INICIO)*/
+
+*{
+	font-family: 'Gotham SSm', sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	list-style: none;
+	text-decoration: none;
+}
+
+section{
+	padding: 50px 5 0px;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 100px;
+	background: black;
+	box-shadow: 0px 0px 6px #c60000;
+}
+
+body{
+	background: black;
+}
+
+label{
+	padding-top: 1rem;
+}
+
+input[type="submit"]{
+	font-size: 100%;
+	border: 0.5px solid black;
+	padding: 0.5rem;
+	border-radius: 4px;
+	width: 10rem;
+	margin: 2 auto;
+	background-image: linear-gradient(to bottom, #EB3F27, #c60000);
+	color: black;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+input[type="password"], input[type="text"], input[type="email"]{
+	border: 1px solid;
+	padding: 0.2rem;
+
+	border-radius: 4px;
+	background-image: linear-gradient(to bottom, #EB3F27, #c60000);
+	text-align: center;
+}
+
+input[type="submit"]:hover{
+	background-image: linear-gradient(to bottom, darkred, #4c0101);
+}
+
+/* ELEMENTOS (BOTOES, CLASSES, FONTE ETC) (FIM)*/
+
+/* PÁGINA DE LOG-IN (INICIO)*/
+
+.f_login div{
+	padding-bottom: 1rem;
+}
+
+.login {
+	padding-top: 1rem;
+	text-align: center;
+	color: #c60000;
+	font-weight: 340;
+	border: 1px solid;
+	border-radius: 19px;
+	margin-top: 11rem;
+	margin-left: 7rem;
+	width: 25%;
+	box-shadow: 0px 0px 7px darkred;
+}
+
+
+/* PÁGINA DE LOG-IN (FIM)*/
+
+/* PÁGINA DE CADASTRO (COMEÇO)*/
+
+.f_cadastro div{
+	padding-bottom: 1rem;
+}
+
+.cadastro {
+	padding-top: 1rem;
+	text-align: center;
+	color: #c60000;
+	font-weight: 340;
+	border: 1px solid;
+	border-radius: 19px;
+	margin-top: 11rem;
+	margin-left: 7rem;
+	width: 25%;
+	box-shadow: 0px 0px 7px darkred;
+}
+
+/* PÁGINA DE CADASTRO (FIM)*/
+
+/*HOME-PAGE (INICIO)*/
+
+.home {
+	color: #c60000;
+	font-weight: 340;
+	margin-top: 11rem;
+	margin-left: 2rem;
+	width: 50%;
+}
+
+.logo img{
+	width: 225px;
+}
+
+.navbar{
+	display: flex;
+}
+
+.navbar li{
+	position: relative;
+}
+
+.navbar a{
+	padding: 10px 20px;
+	font-weight: 400;
+	color: #c60000;
+	font-size: 130%;
+}
+
+.header_btn a{
+	color: #c60000;
+	font-weight: 400;
+	border: 2px solid;
+	padding: 0.5rem;
+	border-radius: 4px;
+	margin: 0 auto;
+	font-size: 130%;
+	background: black;
+}
+
+.header_btn a:hover{
+	color: #4c0101;
+	transition: width ease-in-out 3s;
+}
+
+.navbar a:hover{
+	color: #4c0101;
+}
+
+.text h1{
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	font-size: 3rem;
+	color: #c60000;
+	margin-left: 4rem;
+}
+
+.text p{
+	color: #c60000;
+	padding-left: 4rem;
+	font-size: 120%;
+	text-align: justify;
+}
+
+/*HOME-PAGE (FIM)*/
+
+/*MODELOS (INICIO)*/
+
+.modelos{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, min(300px, auto));
+	gap: 2rem;
+	margin-top: 8rem;
+	margin-bottom: 2rem;
+}
+
+.modelos .caixa{
+	padding: 10px;	
+	text-align: center;
+}
+
+.modelos .caixa .img_caixa img{
+	width: 40%;
+	height: 100%;
+	border-radius: 1rem;
+	border: 2px solid #c60000;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: 0px 0px 10px #c60000;
+}
+
+.btn_alugar {
+	color: #c60000;
+	font-weight: 400;
+	border: 2px solid;
+	padding: 0.5rem;
+	border-radius: 4px;
+	margin: 0 auto;
+	font-size: 130%;
+	box-shadow: 0px 0px 4px #c60000;
+}
+
+.btn_alugar:hover{
+	color: #4c0101;
+	box-shadow: 0px 0px 4px #4c0101;
+}
+
+.modelos h2 {
+	color: #c60000;
+	font-weight: 400;
+}
+
+.modelos h3{
+	color: #c60000;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+/*MODELOS (FIM)*/
