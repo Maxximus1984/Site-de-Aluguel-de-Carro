@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+
+<!--Header-->
+
+    <header>
+        <a href="#" class="logo"><img src="images/logo.jpg"></a>
+        
+        <ul class="navbar">
+            <li><a class="a" href="index.html">Homepage</a></li>
+        </ul>
+
+        <div class="header-btn">
+            <a href="login_admin.html" class="sign-up">Iniciar Sessão</a>
+        </div>
+
+    </header>
+
+<!--Cadastro--->
+
+    <section class="cadastro" id="cadastro">
+
+        <form action="cadastro_admin.php" class="forms" method="post">
+
+            <div><h1>Cadastro de Adminstradores</h1></div>
+        
+            <div>
+        
+                <div><label>Nome</label></div>
+                <div><input type="text" name="nome" id="nome" required autofocus></div>
+                <div><label>E-mail</label></div>
+                <div><input type="email" name="email" id="email" required autofocus></div>    
+                <div><label>Senha</label></div>
+                <div><input type="password" name="senha" id="senha" required></div>
+        
+            </div>
+
+            <div><input type="submit" name ="cadastrar" value="Cadastrar"></div>
+        
+        </form>
+
+    </section>
+
+</body>
+</html>

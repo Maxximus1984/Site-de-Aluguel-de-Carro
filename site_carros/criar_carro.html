@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Veículos</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+
+    <!--Header-->
+
+    <header>
+
+        <a href="#" class="logo"><img src="images/logo.jpg"></a>
+        
+        <ul class="navbar">
+            <li><a class="a" href="index.html">Homepage</a></li>
+    
+        </ul>
+
+        <div class="header-btn">
+            <a href="modelos_admin.php" class="sign-up">Planilha de Produtos</a>
+        </div>
+
+    </header>
+
+<!--Criar Carro-->
+
+<section class="criar_carro">
+
+    <form action="criar_carro.php" class="forms_carro" method="post">
+
+        <div><h1>Cadastro de Veículos</h1></div>
+
+        <div>
+
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" name="modelo" required>
+
+            <label for="img">Imagem</label>
+            <input type="text" id="img" name="img" required>
+        
+            <label for="ano">Ano</label>
+            <input type="text" id="ano" name="ano" required>
+
+            <label for="preço">Preço</label>
+            <input type="text" id="preço" name="preço" required>
+        
+        
+        </div>
+
+        <div><input type="submit" id="cadastrar" name="cadastrar" value="Enviar Produto"></div>
+
+    </form>
+
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* Interface Geral */
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Geologica:wght@300&family=Gotu&family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Geologica', sans-serif;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"]{
+    text-align: center;
+    padding: 0.2rem;
+    background: var(--gradient);
+    border: 1px solid var(--second-color);
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background: var(--second-color);
+}
+
+/* Cores */
+
+:root{
+    --main-color: #d60000;
+    --second-color: #780000;
+    --text-color: #bd0000;
+    --gradient: linear-gradient(#d60000, #780000);
+}
+
+body{
+    background: black;
+}
+
+/* Header */
+
+section{
+    padding: 50px 100px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 15px 100px;
+}
+
+.logo img{
+    width: 300px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li{
+    position: relative;
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    padding: 10px 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar a:hover{
+   color: var(--second-color);
+}
+
+.header-btn a{
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    margin: 10px;
+    color: var(--text-color);
+    font-weight: 800;
+}
+
+.header-btn .sign-in{
+    background:var(--gradient);
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.header-btn .sign-in:hover{
+    background: var(--second-color);
+ }
+
+.header-btn .sign-up{
+    background:var(--gradient);
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.header-btn .sign-up:hover{
+    background: var(--second-color);
+ }
+
+ /* Homepage */
+
+ .home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+ .text h1{
+    font-size: 3.5rem;
+    color: var(--text-color);
+    letter-spacing: 2px;
+ }
+ 
+ .text p{
+    font-size: 1.5rem;
+    margin: 00.5rem 0 1rem;
+    color: var(--text-color);
+ }
+
+/* Modelos */
+
+.modelos {
+    margin-top: 80px;
+}
+
+.heading{
+    color: var(--text-color);
+    font-size: x-large;
+}
+
+.modelos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.modelos-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 15px var(--second-color);
+}
+
+.modelos-container .box .box-img{
+    width: 100%;
+    height: 200px;
+}
+
+.modelos-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modelos-container .box p{
+    padding: 0px;
+    text-align: center;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+
+.modelos-container .box h2{
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.modelos-container .box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.modelos-container .box .btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background: var(--gradient);
+    color: black;
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.modelos-container .box .btn:hover{
+    background: var(--second-color);
+    cursor: pointer;
+}
+
+/* Formulários */
+
+.cadastro{
+    margin-top: 9rem;
+}
+
+.login{
+    margin-top: 9rem;
+}
+
+.criar_carro{
+    margin-top: 9rem;
+}
+
+.forms {
+    font-size: 15px;
+    display: grid;
+    margin: 0 auto;
+	padding: 3rem;
+	text-align: center;
+	color: var(--main-color);
+	font-weight: 340;
+	border: 1px solid;
+	border-radius: 19px;
+	width: 25%;
+	box-shadow: 0px 0px 7px darkred;
+}
+
+.forms div{
+    margin-bottom: 0.5rem;
+}
+
+.forms_carro {
+    font-size: 15px;
+    display: grid;
+    margin: 0 auto;
+	padding: 5rem;
+	text-align: center;
+	color: var(--main-color);
+	font-weight: 340;
+	border: 1px solid;
+	border-radius: 19px;
+	width: 25%;
+	box-shadow: 0px 0px 7px darkred;
+}
+
+.forms_carro div{
+    margin-bottom: 1rem;
+}
